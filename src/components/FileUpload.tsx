@@ -43,17 +43,19 @@ const FileUpload = () => {
             console.log("meow", data);
             if (!data?.file_key || !data.file_name) {
               toast.error("Something went wrong");
+              console.log("something went wrong")
               return;
             }
             mutate(data, {
-              onSuccess: ({ chat_id }) => {
-                console.log(data)
-                toast.success("chat created")
+              onSuccess: (chat_id) => {
+                toast.success("Chat created");
                 router.push(`/chat/${chat_id}`)
               
               },
-              onError: (err) => {
+              onError: (err,chat_id) => {
                 toast.error("Error creating chat");
+                router.push(`/chat/${chat_id}`)
+
                 console.error(err);
               },
             });

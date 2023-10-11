@@ -1,7 +1,7 @@
 import AWS from "aws-sdk";
 import fs from 'fs';
 
-export async function downloadFromS3(file: File) {
+export async function downloadFromS3(file_key: string) {
   try {
     AWS.config.update({
       accessKeyId: process.env.NEXT_PUBLIC_S3_ACCESS_KEY_ID,
@@ -15,7 +15,6 @@ export async function downloadFromS3(file: File) {
       region: 'eu-north-1'
     });
 
-    const file_key = 'uploads/' + Date.now().toString() + file.name.replace(' ', '-');
 
     const params = {
       Bucket: process.env.NEXT_PUBLIC_S3_BUCKET_NAME!,
