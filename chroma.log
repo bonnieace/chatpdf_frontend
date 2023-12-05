@@ -1,0 +1,61 @@
+[32mINFO[0m:     [11-10-2023 12:07:11] Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+[32mINFO[0m:     [11-10-2023 12:08:51] Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [11-10-2023 12:08:51] Starting component System
+[36mDEBUG[0m:    [11-10-2023 12:08:51] Starting component Posthog
+[36mDEBUG[0m:    [11-10-2023 12:08:51] Starting component SqliteDB
+[36mDEBUG[0m:    [11-10-2023 12:08:51] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [11-10-2023 12:08:51] Starting component SegmentAPI
+[32mINFO[0m:     [11-10-2023 12:08:51] Started server process [[36m5516[0m]
+[32mINFO[0m:     [11-10-2023 12:08:51] Waiting for application startup.
+[32mINFO[0m:     [11-10-2023 12:08:51] Application startup complete.
+[32mINFO[0m:     [11-10-2023 12:08:51] Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [11-10-2023 12:09:07] Shutting down
+[32mINFO[0m:     [11-10-2023 12:09:07] Waiting for application shutdown.
+[32mINFO[0m:     [11-10-2023 12:09:07] Application shutdown complete.
+[32mINFO[0m:     [11-10-2023 12:09:07] Finished server process [[36m5516[0m]
+[32mINFO[0m:     [11-10-2023 12:09:21] Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [11-10-2023 12:09:21] Starting component System
+[36mDEBUG[0m:    [11-10-2023 12:09:21] Starting component Posthog
+[36mDEBUG[0m:    [11-10-2023 12:09:21] Starting component SqliteDB
+[36mDEBUG[0m:    [11-10-2023 12:09:21] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [11-10-2023 12:09:21] Starting component SegmentAPI
+[32mINFO[0m:     [11-10-2023 12:09:21] Started server process [[36m10092[0m]
+[32mINFO[0m:     [11-10-2023 12:09:21] Waiting for application startup.
+[32mINFO[0m:     [11-10-2023 12:09:21] Application startup complete.
+[32mINFO[0m:     [11-10-2023 12:09:21] Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [11-10-2023 13:02:00] 127.0.0.1:60543 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [11-10-2023 13:02:04] 127.0.0.1:60543 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [11-10-2023 13:02:05] 127.0.0.1:60543 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [11-10-2023 13:12:20] 127.0.0.1:61283 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [11-10-2023 13:26:49] Shutting down
+[32mINFO[0m:     [11-10-2023 13:26:49] Waiting for application shutdown.
+[32mINFO[0m:     [11-10-2023 13:26:49] Application shutdown complete.
+[32mINFO[0m:     [11-10-2023 13:26:49] Finished server process [[36m10092[0m]
+[32mINFO[0m:     [11-10-2023 13:26:55] Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [11-10-2023 13:26:55] Starting component System
+[36mDEBUG[0m:    [11-10-2023 13:26:55] Starting component Posthog
+[36mDEBUG[0m:    [11-10-2023 13:26:55] Starting component SqliteDB
+[36mDEBUG[0m:    [11-10-2023 13:26:55] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [11-10-2023 13:26:55] Starting component SegmentAPI
+[32mINFO[0m:     [11-10-2023 13:26:55] Started server process [[36m16336[0m]
+[32mINFO[0m:     [11-10-2023 13:26:55] Waiting for application startup.
+[32mINFO[0m:     [11-10-2023 13:26:55] Application startup complete.
+[32mINFO[0m:     [11-10-2023 13:26:55] Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [11-10-2023 13:26:59] 127.0.0.1:62659 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [11-10-2023 13:55:09] 127.0.0.1:64386 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [11-10-2023 13:55:26] 127.0.0.1:64387 - "GET /api/v1/heartbeat HTTP/1.1" 200
+[32mINFO[0m:     [11-10-2023 14:12:34] 127.0.0.1:49165 - "GET /api/v1/collections HTTP/1.1" 200
+[32mINFO[0m:     [11-10-2023 14:44:16] Shutting down
+[32mINFO[0m:     [11-10-2023 14:44:16] Waiting for application shutdown.
+[32mINFO[0m:     [11-10-2023 14:44:16] Application shutdown complete.
+[32mINFO[0m:     [11-10-2023 14:44:16] Finished server process [[36m16336[0m]
+[32mINFO[0m:     [11-10-2023 14:44:21] Anonymized telemetry enabled. See https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [11-10-2023 14:44:21] Starting component System
+[36mDEBUG[0m:    [11-10-2023 14:44:21] Starting component Posthog
+[36mDEBUG[0m:    [11-10-2023 14:44:21] Starting component SqliteDB
+[36mDEBUG[0m:    [11-10-2023 14:44:21] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [11-10-2023 14:44:21] Starting component SegmentAPI
+[32mINFO[0m:     [11-10-2023 14:44:21] Started server process [[36m13764[0m]
+[32mINFO[0m:     [11-10-2023 14:44:21] Waiting for application startup.
+[32mINFO[0m:     [11-10-2023 14:44:21] Application startup complete.
+[32mINFO[0m:     [11-10-2023 14:44:21] Uvicorn running on [1mhttp://0.0.0.0:8000[0m (Press CTRL+C to quit)

@@ -38,7 +38,35 @@ const FileUpload = () => {
           return;
         }
         try {
+          const formData = new FormData();
+          formData.append("pdf", file);
+          fetch("http://localhost:8000/getpdf", {
+            method: "POST",
+            body: formData,
+          
+        })
+
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data.response);
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+        });
+
+        }
+        catch (error) {
+          console.log("not getting to backend",error);
+        }
+        
+
+        
+
+
+      
+        try {
             setUploading(true);
+            
             const data = await uploadToS3(file);
             console.log("meow", data);
             if (!data?.file_key || !data.file_name) {
@@ -48,13 +76,14 @@ const FileUpload = () => {
             }
             mutate(data, {
               onSuccess: (chat_id) => {
-                toast.success("Chat created");
-                router.push(`/chat/${chat_id}`)
+                console.log("Chat created");
+                console.log(chat_id)
+                router.push(`/chat`)
               
               },
               onError: (err,chat_id) => {
                 toast.error("Error creating chat");
-                router.push(`/chat/${chat_id}`)
+                //router.push(`/chat/${chat_id}`)
 
                 console.error(err);
               },

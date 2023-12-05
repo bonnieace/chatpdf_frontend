@@ -34,10 +34,10 @@ export async function getMatchesFromEmbeddings(
   }
 }
 
-export async function getContext(query: string) {
+export async function getContext(query: string, fileKey: string) {
   const context = query
 
-  
+ 
 
 
 return context

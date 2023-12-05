@@ -11,10 +11,10 @@ import SubscriptionButton from "./SubscriptionButton";
 type Props = {
   chats: DrizzleChat[];
   chatId: number;
-  isPro: boolean;
+  
 };
 
-const ChatSideBar = ({ chats, chatId, isPro }: Props) => {
+const ChatSideBar = ({ chats, chatId }: Props) => {
   const [loading, setLoading] = React.useState(false);
 
   return (
@@ -28,7 +28,7 @@ const ChatSideBar = ({ chats, chatId, isPro }: Props) => {
 
       <div className="flex max-h-screen overflow-scroll pb-20 flex-col gap-2 mt-4">
         {chats.map((chat) => (
-          <Link key={chat.id} href={`/chat/${chat.id}`}>
+          <Link key={chat.id} href={`/chat`}>
             <div
               className={cn("rounded-lg p-3 text-slate-300 flex items-center", {
                 "bg-blue-600 text-white": chat.id === chatId,

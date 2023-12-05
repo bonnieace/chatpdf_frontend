@@ -1,7 +1,6 @@
-import AWS from "aws-sdk";
-import fs from 'fs';
+import AWS from 'aws-sdk';
 
-export async function downloadFromS3(file_key: string) {
+export async function downloadFromS3(file_key: string): Promise<Buffer | null> {
   try {
     AWS.config.update({
       accessKeyId: process.env.NEXT_PUBLIC_S3_ACCESS_KEY_ID,
@@ -15,7 +14,6 @@ export async function downloadFromS3(file_key: string) {
       region: 'eu-north-1'
     });
 
-
     const params = {
       Bucket: process.env.NEXT_PUBLIC_S3_BUCKET_NAME!,
       Key: file_key,
@@ -27,11 +25,7 @@ export async function downloadFromS3(file_key: string) {
       throw new Error('S3 object body is empty or undefined.');
     }
 
-    const file_name = `c:/tmp/pdf-${Date.now()}.pdf`;
-
-    fs.writeFileSync(file_name, obj.Body as Buffer);
-    
-    return file_name;
+    return obj.Body as Buffer;
   } catch (error) {
     console.error(error);
     return null;
