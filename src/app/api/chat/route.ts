@@ -12,19 +12,13 @@ export const runtime = "edge";
 
 export async function POST(req: Request) {
   
-    const { messages, chatId } = await req.json();
+    const { messages } = await req.json();
 
     const lastMessage = messages[messages.length - 1];
     
     const context = await getContext(lastMessage.content);
-    console.log(context)
-    
-
-
     const formData = new FormData();
     formData.append("query", context);
-    
-
     const response = await fetch("http://127.0.0.1:8000/chatpdf", {
         method: "POST",
         body: formData,
