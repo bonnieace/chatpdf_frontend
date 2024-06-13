@@ -21,7 +21,7 @@ export default async function Home(){
             Go to chats
           </Button>}
         </div>
-        <p className="max-w-xl mt-1 text-lg">"Welcome to ChatPDF: Where AI Enhances Your Document Conversations!"</p>
+        <p className="max-w-xl mt-1 text-lg">Welcome to ChatPDF: Where AI Enhances Your Document Conversations!</p>
         <div className="w-full mt-4">
           {isAuth ?(<FileUpload/>):(
             <Link href='/sign-in'>
