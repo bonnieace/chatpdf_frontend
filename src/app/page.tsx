@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { UserButton, auth } from "@clerk/nextjs";
 import Link from "next/link";
-import {LogIn} from 'lucide-react'
+import { LogIn } from 'lucide-react';
 import FileUpload from "@/components/FileUpload";
 export default async function Home(){
   const{userId}=await auth()
@@ -21,7 +21,7 @@ export default async function Home(){
             Go to chats
           </Button>}
         </div>
-        <p className="max-w-xl mt-1 text-lg">Welcome to ChatPDF: Where AI Enhances Your Document Conversations!</p>
+        <p className="max-w-xl mt-1 text-lg">"Welcome to ChatPDF: Where AI Enhances Your Document Conversations!"</p>
         <div className="w-full mt-4">
           {isAuth ?(<FileUpload/>):(
             <Link href='/sign-in'>
@@ -33,6 +33,5 @@ export default async function Home(){
         </div>
       </div>
     </div>
-  
-  </div>
+  );
 }
